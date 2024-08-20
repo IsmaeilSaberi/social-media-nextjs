@@ -17,18 +17,6 @@ const AddPost = () => {
   // const [desc, setDesc] = useState("");
   // const [img, setImg] = useState<any>();
 
-  const testAction = async (formData: FormData) => {
-    // "use server";
-    // const desc = formData.get("desc") as string;
-    // try {
-    //   prisma.post.create({
-    //     data: { userId:, desc: desc },
-    //   });
-    // } catch (error) {
-    //   console.log(error);
-    // }
-  };
-
   // if (!isLoaded) {
   //   return "Loading...";
   // }
@@ -47,16 +35,16 @@ const AddPost = () => {
       <div className="flex-1">
         {/* TEXT INPUT */}
         <form
-          action={testAction}
+          action=""
           //   action={(formData) => addPost(formData, img?.secure_url || "")}
           className="flex gap-4"
         >
-          {/* <textarea
+          <textarea
             placeholder="What's on your mind?"
             className="flex-1 bg-slate-100 rounded-lg p-2"
             name="desc"
-            onChange={(e) => setDesc(e.target.value)}
-          ></textarea> */}
+            // onChange={(e) => setDesc(e.target.value)}
+          ></textarea>
           <div className="">
             <Image
               src="/emoji.png"
